@@ -30,7 +30,7 @@ public class SeTest {
     public void typeTest(){
         User user=new User("zwt","null","guangdong",22);
         try {
-            Type genericType=user.getClass().getDeclaredField("datemap").getGenericType();
+            Type genericType=user.getClass().getDeclaredField("bookid").getGenericType();
             for(Type t: ((ParameterizedType)genericType).getActualTypeArguments()){
                 try {
                     Class c=Class.forName(t.getTypeName());

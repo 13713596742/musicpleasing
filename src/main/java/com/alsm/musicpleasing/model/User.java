@@ -9,6 +9,8 @@ public class User {
     private String area;
     private  int year;
     private List<String> data;
+    private List<Integer> bookid;
+
 
     public String getUserName() {
         return userName;
